@@ -54,6 +54,28 @@ class Triangle
 end
 
 	describe Triangle do
+		describe "#new" do
+			let(:triangle) { Triangle.new }
+		
+			it "should return a triangle instance" do
+				expect (Triangle.new).to be_kind_of(Triangle)
+			end
+			it "should respond to #a" do
+				expect(triangle).to respond_to(:a)
+			end
+			it "should respond to #b" do
+				expect(triangle).to respond_to(:b)
+			end
+			it "should respond to #c" do
+				expect (triangle).to respond_to (:c)
+			end
+			
+			
+			it "should respond to #a"
+			it "should respond to #b"
+			it "should respond to #c"
+		end
+			
 		describe "#kind" do
 			context "with valid sides" do
 			it 'should return equilateral if both sides are equal '
